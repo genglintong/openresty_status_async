@@ -1,0 +1,19 @@
+# BEGIN lua-resty-redis-util
+
+dist lua-resty-redis-util-0.05
+  aliases resty.redis.util
+  modules lua-resty-redis-util-0.05
+
+module lua-resty-redis-util-0.05
+  aliases resty.redis.util
+  section 523 2636 安装(install)
+  section 2636 5987 注意事项(note)
+  section 2665 3683 默认值(default value)
+  section 3683 4726 subscribe
+  section 4726 5324 pipeline
+  section 5324 5987 script
+  section 5987 6148 鸣谢(thanks)
+  section 6148 6215 反馈(feedback)
+  section 6215 8549 copyright and license
+
+# END lua-resty-redis-util
