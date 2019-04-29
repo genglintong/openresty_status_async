@@ -23,10 +23,10 @@ openresty -p openrestyDir -c openrestyDir/conf/nginx.conf -s quit
 `0 0 * * * cd openrestyDir/script && sh +x spiltLog.sh >>/dev/null 2>&1`
 
 ### 性能测试
-[博客](!https://www.jianshu.com/p/19721edbc6be)
+[博客](https://www.jianshu.com/p/19721edbc6be)
 
 #### siege 压力测试
-[安装](!https://centos.pkgs.org/6/repoforge-x86_64/siege-2.72-1.el6.rf.x86_64.rpm.html)
+[安装](https://centos.pkgs.org/6/repoforge-x86_64/siege-2.72-1.el6.rf.x86_64.rpm.html)
 ```
 wget http://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el6/en/x86_64/rpmforge/RPMS/siege-2.72-1.el6.rf.x86_64.rpm
 sudo rpm -Uvh siege-2.72-1.el6.rf.x86_64.rpm
@@ -79,7 +79,7 @@ ab -r # 默认跳过报错
 
 #### 优化
 - worker_connections被打满<br>
-[NGINX最大并发max_clients计算](!http://blog.51cto.com/liuqunying/1420556)<br>
+[NGINX最大并发max_clients计算](http://blog.51cto.com/liuqunying/1420556)<br>
 NGINX作为http服务器时:<br>
 max_clients = worker_process * worker_conections<br>
 NGINX作为反向代理时:<br>
@@ -91,7 +91,7 @@ max_clients = worker_process * worker_conections / 4<br>
     redis 连接超时<br>
     - 修改方案1-将超时时间设置为20s(原来2s)<br>
     结果: 超时操作明显减少<br>
-    - 修改方案2-[使用连接池](!https://www.the5fire.com/golang+redis-vs-nginx+lua+redis.html)<br>
+    - 修改方案2-[使用连接池](https://www.the5fire.com/golang+redis-vs-nginx+lua+redis.html)<br>
     两W并发 100W请求下 连接池对比<br>
     
     |连接池数|超时数|
